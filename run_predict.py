@@ -12,6 +12,8 @@ from config import *
 from get_data import get_current_number, spider
 from loguru import logger
 
+
+# test 推送到新分支测试
 parser = argparse.ArgumentParser()
 parser.add_argument('--name', default="dlt", type=str, help="选择训练数据: 双色球/大乐透")
 args = parser.parse_args()
