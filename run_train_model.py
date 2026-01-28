@@ -12,6 +12,8 @@ from modeling import LstmWithCRFModel, SignalLstmModel, tf
 from loguru import logger
 
 parser = argparse.ArgumentParser()
+
+# 模型训练，选择你要训练的玩法模型：ssq -> 双色球；dlt -> 大乐透
 parser.add_argument('--name', default="ssq", type=str, help="选择训练数据: 双色球/大乐透")
 parser.add_argument('--train_test_split', default=0.7, type=float, help="训练集占比, 设置大于0.5")
 args = parser.parse_args()

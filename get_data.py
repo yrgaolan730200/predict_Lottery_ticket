@@ -10,7 +10,9 @@ from loguru import logger
 from config import os, name_path, data_file_name
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--name', default="ssq", type=str, help="选择爬取数据: 双色球/大乐透")
+
+# 选择你要爬取的玩法数据：dlt ->大乐透；ssq -> 双色球
+parser.add_argument('--name', default="dlt", type=str, help="选择爬取数据: 双色球/大乐透")  
 args = parser.parse_args()
 
 
